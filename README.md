@@ -5,13 +5,13 @@ This project demonstrates a Betting contract that interacts with an Automated Ma
 
 ```
 ├── README.md
-├── contracts               //Contains Solidity smart contracts
-├── hardhat.config.js       //Harthat configuration
+├── contracts               #Contains Solidity smart contracts
+├── hardhat.config.js       #Harthat configuration
 ├── ignition
-│   └── modules             //JavaScript scripts for deploying smart contracts
+│   └── modules             #JavaScript scripts for deploying smart contracts
 ├── package-lock.json
 ├── package.json
-└── tests                           //JavaScript files for testing deployed smart contracts.
+└── tests                   #JavaScript files for testing deployed smart contracts.
 ```
 
 ### Prerequisites
