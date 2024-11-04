@@ -16,7 +16,10 @@ This project demonstrates a Betting contract that interacts with an Automated Ma
 
 ### Prerequisites
 
-* WALLET_KEY: ensure that you have a wallet (e.g [Metamask](https://metamask.io/it/),  private key, used for deploying the smart contract and signing transac
+* WALLET_KEY: Ensure that you have a wallet (e.g [Metamask](https://metamask.io/it/): 1. Visit [https://metamask.io/(https://metamask.io/), 2. Install MetaMask and add it's extension to your browser. open the wallet from the extension and go to accounts details
+* ![Screenshot 2024-11-04 at 09 27 41](https://github.com/user-attachments/assets/58a579fc-e5f3-49e2-8092-16ca9966076a)
+
+On the pop up, click “Add extension”. private key, used for deploying the smart contract and signing transac
 * PROVIDER_API_KEY: The API key of blockchain infrastructure provider.
 
 ### Installation and Setup
