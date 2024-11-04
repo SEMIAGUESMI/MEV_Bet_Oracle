@@ -1,17 +1,17 @@
 ### Project description 
 This project demonstrates a Betting contract that interacts with an Automated Market Maker (AMM) to get real-time token prices and uses [Chainlink](https://chain.link) oracles to fetch off-chain data in order to restrict MEV opportunities (front-running , back-running).
 
-### Project structure
+### Project Structure
 
 ```
 ├── README.md
-├── contracts                   # Contains Solidity smart contracts
-├── hardhat.config.js       # Harthat configuration
+├── contracts               //Contains Solidity smart contracts
+├── hardhat.config.js       //Harthat configuration
 ├── ignition
-│   └── modules             # JavaScript scripts for deploying smart contracts
+│   └── modules             //JavaScript scripts for deploying smart contracts
 ├── package-lock.json
 ├── package.json
-└── tests                           # JavaScript files for testing deployed smart contracts.
+└── tests                           //JavaScript files for testing deployed smart contracts.
 ```
 
 ### Prerequisites
