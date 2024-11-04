@@ -16,7 +16,7 @@ This project demonstrates a Betting contract that interacts with an Automated Ma
 
 ### Prerequisites
 
-* WALLET_KEY: Your wallet's private key, used for deploying the smart contract and signing transactions.
+* WALLET_KEY: ensure that you have a wallet (e.g [Metamask](https://metamask.io/it/),  private key, used for deploying the smart contract and signing transac
 * PROVIDER_API_KEY: The API key of blockchain infrastructure provider.
 
 ### Installation and Setup
