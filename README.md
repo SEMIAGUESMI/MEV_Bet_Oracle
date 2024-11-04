@@ -16,8 +16,8 @@ This project demonstrates a Betting contract that interacts with an Automated Ma
 
 ### Prerequisites
 
-* WALLET-KEY
-* PROVIDER-API-KEY
+* WALLET_KEY: Your wallet's private key, used for deploying the smart contract and signing transactions.
+* PROVIDER_API_KEY: The API key of blockchain infrastructure provider.
 
 ### Installation and Setup
 1. Install Project Dependencies: Install all dependencies listed in package.json:

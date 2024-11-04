@@ -10,7 +10,7 @@ module.exports = buildModule("Bet", (m) => {
   const humanReadableDate = "31 october 2024 23:00:00"; 
   const timestamp1= convertDateToTimestamp(humanReadableDate);
   
-  const oracle = m.contract("Bet", ["0xe1E89120C62a0EF01Fc379849f44572c73dc3583", "0x3B826251264d1148357215EAA07896b62994068A", 1, timestamp1]);
+  const oracle = m.contract("Bet", ["0x405F1371644897afB050829eea2A21a0FE430e50", "0x5276d12ffFaF205a1ef51e565CAfBFC046E5347D", 1, timestamp1]);
   return { contractaddress: oracle.address };  
 });
 

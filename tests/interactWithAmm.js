@@ -1,5 +1,4 @@
 const { ethers } = require('ethers');
-console.log(ethers.version);
 require('dotenv').config();
 
 const { ammAddress, ammAbi, tcoinAddress, tcoinAbi } = require('./constant');
@@ -13,15 +12,16 @@ const getEthereumContract = (address, abi, signer) => {
     return TransactionContract
 }
 (async () => {
-
+    console.log(process.env.ALCHEMY_API_KEY)
+    console.log(process.env.PRIVATE_KEY_WALLET)
     const alchemy = ethers.getDefaultProvider('sepolia', { alchemy: process.env.ALCHEMY_API_KEY, });
     const signer = new ethers.Wallet(process.env.PRIVATE_KEY_WALLET);
     const connectedWallet = signer.connect(alchemy);
     const AMMcontract = getEthereumContract(ammAddress, ammAbi, connectedWallet);
     const TCOINcontract = getEthereumContract(tcoinAddress, tcoinAbi, connectedWallet);
 
-    // ******************************call addliquidity********************************//
-    /*
+    // ******************************call addliquidity********************************/
+  
     // TCOIN amount
     const amountToApprove = ethers.parseUnits("600", 6);
     console.log(amountToApprove);
@@ -30,7 +30,7 @@ const getEthereumContract = (address, abi, signer) => {
     const allowanceValue = await TCOINcontract.allowance(signer.address, AMMcontract.target);
     console.log("Allowance Value:", ethers.formatUnits(allowanceValue, 6)); // Convert from smallest units to tcoin
     //ETH amount
-    const valueInWei = ethers.parseUnits("0.0006", "ether");
+    const valueInWei = ethers.parseUnits("0.0000006", "ether");
     const val1 = BigInt(valueInWei);
     console.log(val1);
 
@@ -48,13 +48,8 @@ const getEthereumContract = (address, abi, signer) => {
     console.log(receipt);
     console.log('Transaction Status:', receipt.status === 1 ? 'Success' : 'Failure');
 
-    let balanceAMMInEther = await alchemy.getBalance(AMMcontract.target);
-    let balanceAMMInEther_tcoinvalue = await AMMcontract.getBalanceOfERC20(AMMcontract.target);
-    let balanceAmmInEther_ethValue = ethers.formatEther(balanceAMMInEther);
-    console.log(`Balance of AMM on eth : ${balanceAmmInEther_ethValue} ETH`);
-    console.log(`Balance of AMM on tcoin: ${balanceAMMInEther_tcoinvalue / 10 ** 6} TCOIN`);*/
-
-    // ******************************call swap********************************// 
+    // ******************************call swap********************************/
+    
     const etherAmount2 = ethers.parseUnits("0.0003", "ether");
     const val = BigInt(etherAmount2);
     const txSwap = await AMMcontract.swap(0, { value: val });
@@ -71,5 +66,5 @@ const getEthereumContract = (address, abi, signer) => {
     console.log(receipt);
     console.log('Transaction Status:', receipt.status === 1 ? 'Success' : 'Failure');
     //TEST GET RATE
-    console.log("rate ether", parseFloat((await AMMcontract.getRate("ether")).toString()) / 10 ** 12);
+    //console.log("rate ether", parseFloat((await AMMcontract.getRate("ether")).toString()) / 10 ** 12);*/
 })();
