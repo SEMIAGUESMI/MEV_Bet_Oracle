@@ -21,7 +21,7 @@ This project demonstrates a Betting contract that interacts with an Automated Ma
 * YOUR-PROVIDER_API_KEY: In this project we are using Alchemy, a blockchain infrastructure provider, to manage the interaction process with ethereum blockchain. To create Alchemy provider 1. go to [https://www.alchemy.com/](https://www.alchemy.com/) 2. click on "get your API key" 3. sign up 4. create an app, this will generate an Alchemy API key 5. coppy the generated API key and past it in the hardhat.config.js `url: "https://eth-sepolia.g.alchemy.com/v2/YOUR-PROVIDER-API-KEY` and .env `ALCHEMY_API_KEY = https://eth-sepolia.g.alchemy.com/v2/YOUR-PROVIDER-API-KEY` files.
 
 ### Installation and Setup
-1. Install Project Dependencies: Install all dependencies listed in package.json:
+1. Install Project Dependencies
     ```
     npm install
     ```
