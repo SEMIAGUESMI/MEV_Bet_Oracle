@@ -25,11 +25,12 @@ This project demonstrates a Betting contract that interacts with an Automated Ma
     ```
     npm install
     ```
-2. Compile Smart Contracts
+2. Configure the network (e.g., Sepolia testnet), signer accounts (`accounts:["YOUR-WALLET-PRIVATE-KEY"` ), and provider API key (`url: "https://eth-sepolia.g.alchemy.com/v2/YOUR-PROVIDER-API-KEY`) in the `hardhat.config.js` file 
+3. Compile Smart Contracts
     ```
     npx hardhat compile
     ```
-3. Configure the network (e.g., Sepolia testnet), signer accounts (private keys), and provider API key (e.g., Alchemy) in the `hardhat.config.js` file to enable successful deployment.
+to enable successful deployment.
 4. Use Hardhat Ignition to deploy the contracts Tcoin, AMM, and Bet to a specified network:
     ```
     for name in Tcoin AMM Bet; do 
