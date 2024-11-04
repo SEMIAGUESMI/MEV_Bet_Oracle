@@ -46,4 +46,5 @@ This project demonstrates a Betting contract that interacts with an Automated Ma
     ```bash
     node tests/interactWithBet.js
     ```
-For more details please check the inplementation guide in [execution guide.pdf](https://github.com/SEMIAGUESMI/MEV_Bet_Oracle/blob/master/execution%20guide.pdf) file. 
+
+Check the [testing guide](https://github.com/SEMIAGUESMI/MEV_Bet_Oracle/blob/master/docs/testing_guide.pdf) for more details. 
